@@ -256,7 +256,7 @@ def setup_module(module, backend="virtualDevice"):
     lsst.utils.tests.init()
     try:
         afwDisplay.setDefaultBackend(backend)
-    except:
+    except Exception:
         print("Unable to configure display backend: %s" % backend)
 
 
